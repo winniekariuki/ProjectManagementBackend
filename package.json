@@ -1,0 +1,23 @@
+{
+  "name": "opportunity-managementbackend",
+  "version": "1.0.0",
+  "description": "opportuniy management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon index.js"
+  },
+  "author": "winnie kariuki",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.13"
+  },
+  "engines": {
+    "node": "v13.8.0"
+  }
+}
