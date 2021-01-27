@@ -7,6 +7,7 @@ const app = express();
 const user = require("./routes/users");
 const account = require("./routes/account");
 const opportunity = require("./routes/opportunity");
+const cors = require('cors');
 
 // PORT
 const PORT = process.env.PORT || 4000;
@@ -15,6 +16,14 @@ const PORT = process.env.PORT || 4000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+//cors
+app.use(cors())
+// app.use((req,res,next) =>{
+//   res.header
+//   ("Access-Control-Allow-origin","*");
+//   res.header("Access-control-Allow-Headers","Origin, X-Requested-With, Accept, Authorization")
+//   next();
+// })
 // Routes defn
 app.use("/user", user);
 app.use("/", account);
